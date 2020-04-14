@@ -27,7 +27,7 @@ Other fork: https://github.com/PFloeschel/simpleDLNA
 
 **Upgrade and fix project**
     
-- Upgrade .net 4.5.1 => 4.7
+- Upgrade .net 4.5.1 => 4.8
 - Build to /build
 
 Actually using [nssm](https://nssm.cc/) to run it as a Windows service with stdout redirected to log file.
