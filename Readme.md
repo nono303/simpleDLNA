@@ -8,6 +8,7 @@ See [the github page](http://nmaier.github.io/simpleDLNA/) for more details and 
 ---
 Thanks to [Nils Maier](https://github.com/nmaier) for his excellent and simple dlna server.  
 I just fork it to make a "Very Simple" DLNA server with quick & dirty code changes ^^
+Other fork: https://github.com/PFloeschel/simpleDLNA
 
 ## Binary available in /build ##
 
@@ -32,6 +33,6 @@ I just fork it to make a "Very Simple" DLNA server with quick & dirty code chang
 Actually using [nssm](https://nssm.cc/) to run it as a Windows service with stdout redirected to log file.
 
 Simple to compile with [MS Build Tools 2017](https://www.visualstudio.com/fr/downloads/)  
-``MSBuild.exe sdlna.sln /m /t:Clean,Build /p:Configuration=Release /p:DebugSymbols=false /p:DebugType=None``
+``MSBuild.exe sdlna.sln /m /t:Clean,Build /p:Configuration=Release /p:Platform="Any CPU" /p:DebugSymbols=false /p:DebugType=None``
 
 Binary aviable in /build

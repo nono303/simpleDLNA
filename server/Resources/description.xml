@@ -12,11 +12,11 @@
     <friendlyName/>
     <deviceType>urn:schemas-upnp-org:device:MediaServer:1</deviceType>
     <manufacturer>tn123.org</manufacturer>
-    <manufacturerURL>https://tn123.org/</manufacturerURL>
+    <manufacturerURL>https://https://github.com/nono303/simpleDLNA/</manufacturerURL>
     <modelName>sdlna Media Server</modelName>
-    <modelDescription></modelDescription>
-    <modelNumber></modelNumber>
-    <modelURL>https://tn123.org/</modelURL>
+    <modelDescription>Fork from tn123.org</modelDescription>
+    <modelNumber>1.0.1</modelNumber>
+    <modelURL>https://dlna.nono303.net/</modelURL>
     <serialNumber></serialNumber>
     <sec:ProductCap>smi,DCM10,getMediaInfo.sec,getCaptionInfo.sec</sec:ProductCap>
     <sec:X_ProductCap>smi,DCM10,getMediaInfo.sec,getCaptionInfo.sec</sec:X_ProductCap>
