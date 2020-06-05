@@ -73,8 +73,10 @@ namespace NMaier.SimpleDlna.FileMediaServer
       }
       var parent = this.directories[0].Parent ?? this.directories[0];
       FriendlyName = this.directories.Length == 1
-        ? $"{this.directories[0].Name} ({parent.FullName})"
-        : $"{this.directories[0].Name} ({parent.FullName}) + {this.directories.Length - 1}";
+      //  ? $"{this.directories[0].Name} ({parent.FullName})"
+      //  : $"{this.directories[0].Name} ({parent.FullName}) + {this.directories.Length - 1}";
+      ? $"{this.directories[0].Name}"
+      : $"{this.directories[0].Name} + {this.directories.Length - 1}";
       watchers = (from d in directories
                   select new FileSystemWatcher(d.FullName)).ToArray();
       UUID = DeriveUUID();

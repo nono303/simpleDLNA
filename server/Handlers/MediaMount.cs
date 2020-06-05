@@ -161,7 +161,7 @@ namespace NMaier.SimpleDlna.Server
       doc.SelectSingleNode("//*[local-name() = 'modelNumber']").InnerText =
         Assembly.GetExecutingAssembly().GetName().Version.ToString();
       doc.SelectSingleNode("//*[local-name() = 'friendlyName']").InnerText =
-        FriendlyName + " — sdlna";
+         FriendlyName;
 
       doc.SelectSingleNode(
         "//*[text() = 'urn:schemas-upnp-org:service:ContentDirectory:1']/../*[local-name() = 'SCPDURL']").InnerText =
