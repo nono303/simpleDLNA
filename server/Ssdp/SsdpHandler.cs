@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.IO;
@@ -44,7 +44,7 @@ namespace NMaier.SimpleDlna.Server.Ssdp
       new ConcurrentQueue<Datagram>();
 
     private readonly Timer notificationTimer =
-      new Timer(30000);
+      new Timer(10000);
 
     private readonly Timer queueTimer =
       new Timer(1000);
