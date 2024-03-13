@@ -6,6 +6,7 @@ using System.Net;
 using System.Net.Sockets;
 using System.Reflection;
 using System.Timers;
+using System.Diagnostics;
 using log4net;
 using NMaier.SimpleDlna.Server.Ssdp;
 using NMaier.SimpleDlna.Utilities;
@@ -160,10 +161,10 @@ namespace NMaier.SimpleDlna.Server
         }
         break;
       }
-      var version = Assembly.GetExecutingAssembly().GetName().Version;
+      var version = FileVersionInfo.GetVersionInfo(Assembly.GetExecutingAssembly().Location).ProductVersion;
       var bitness = IntPtr.Size * 8;
       return
-        $"{pstring}{bitness}/{os.Version.Major}.{os.Version.Minor} UPnP/1.0 DLNADOC/1.5 sdlna/{version.Major}.{version.Minor}";
+        $"{pstring}{bitness}/{os.Version.Major}.{os.Version.Minor} UPnP/1.0 DLNADOC/1.5 sdlna/{version}";
     }
 
     private void TimeouterCallback(object sender, ElapsedEventArgs e)
