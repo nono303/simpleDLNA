@@ -9,7 +9,7 @@ Thanks to [Nils Maier](https://github.com/nmaier) for his excellent and simple d
 I just fork it to make a "Very Simple" DLNA server with quick & dirty code changes ^^   
 Other fork: https://github.com/PFloeschel/simpleDLNA  
 
-## Binary available in /build ##
+## Binary available in [releases](https://github.com/nono303/simpleDLNA/releases) ##
 
 **Reduce IO usage**
 
